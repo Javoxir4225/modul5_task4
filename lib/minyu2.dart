@@ -3,6 +3,8 @@ import 'package:flutter_application_4/imtihon1.dart';
 import 'package:flutter_application_4/minyu1.dart';
 import 'package:flutter_application_4/uy_ishi_1.dart';
 import 'package:flutter_application_4/uy_ishi_2.dart';
+import 'package:flutter_application_4/uy_ishi_3.dart';
+import 'package:flutter_application_4/uy_ishi_4.dart';
 
 class Minyu2 extends StatefulWidget {
   const Minyu2({super.key});
@@ -132,7 +134,13 @@ class _Minyu2State extends State<Minyu2> with SingleTickerProviderStateMixin {
             SlideTransition(
               position: _3anim,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const UyUshi3(),
+                    ),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   elevation: 10,
                   backgroundColor: Colors.green,
@@ -154,7 +162,11 @@ class _Minyu2State extends State<Minyu2> with SingleTickerProviderStateMixin {
             SlideTransition(
               position: _4anim,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const UyUshi4(),),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   elevation: 10,
                   backgroundColor: Colors.red,
@@ -173,7 +185,6 @@ class _Minyu2State extends State<Minyu2> with SingleTickerProviderStateMixin {
               ),
             ),
             const SizedBox(height: 16),
-           
             SlideTransition(
               position: _5anim,
               child: ElevatedButton(

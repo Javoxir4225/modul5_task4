@@ -44,33 +44,42 @@ class _Minyu1State extends State<Minyu1> with SingleTickerProviderStateMixin {
         opacity: _animation,
         child: Container(
           alignment: Alignment.center,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text(
-                "WELKOME",
-                style: TextStyle(
-                  fontFamily: "Peralta",
-                  fontSize: 36,
+          child: GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const Minyu2(),
                 ),
-              ),
-              SizedBox(height: 16),
-              Text(
-                "HOME",
-                style: TextStyle(
-                  fontFamily: "Peralta",
-                  fontSize: 36,
+              );
+            },
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Text(
+                  "WELKOME",
+                  style: TextStyle(
+                    fontFamily: "Peralta",
+                    fontSize: 36,
+                  ),
                 ),
-              ),
-              SizedBox(height: 16),
-              Text(
-                "WORK",
-                style: TextStyle(
-                  fontFamily: "Peralta",
-                  fontSize: 36,
+                SizedBox(height: 16),
+                Text(
+                  "HOME",
+                  style: TextStyle(
+                    fontFamily: "Peralta",
+                    fontSize: 36,
+                  ),
                 ),
-              ),
-            ],
+                SizedBox(height: 16),
+                Text(
+                  "WORK",
+                  style: TextStyle(
+                    fontFamily: "Peralta",
+                    fontSize: 36,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

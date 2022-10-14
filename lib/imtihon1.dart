@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_4/imtihon2.dart';
 import 'package:flutter_application_4/imtihon3.dart';
 import 'package:flutter_application_4/imtihon4.dart';
-import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+// import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 
 class Imtihon extends StatefulWidget {
   const Imtihon({super.key});
@@ -51,7 +51,7 @@ class _ImtihonState extends State<Imtihon> with SingleTickerProviderStateMixin {
           ),
         child: Scaffold(
           body: PageView(
-            controller: _pageController,
+            // controller: _pageController,
             onPageChanged: (int index) {
               setState(() {
                 _index = index;
@@ -90,7 +90,7 @@ class _ImtihonState extends State<Imtihon> with SingleTickerProviderStateMixin {
               BottomNavigationBarItem(
                   icon: FloatingActionButton(
                     onPressed: () {
-                      Navigator.of(context).push(
+                      Navigator.of(context).pushReplacement(
                         MaterialPageRoute(builder: (context) => Imtihon3()),
                       );
                     },
@@ -307,7 +307,7 @@ class _ImtihonState extends State<Imtihon> with SingleTickerProviderStateMixin {
               children: [
                 GestureDetector(
                   onTap: () {
-                    Navigator.of(context).push(
+                    Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
                         builder: (context) => set ? Imtihon2() : Imtihon4(),
                       ),

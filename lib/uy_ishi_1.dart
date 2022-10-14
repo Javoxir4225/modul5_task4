@@ -24,39 +24,39 @@ class _UyIshi1State extends State<UyIshi1> {
             style: TextStyle(fontSize: 24, color: Colors.black),
           ),
           actions: [
-              IconButton(
-                onPressed: () {
-                  setState(() {
-                    _setLokol1 = !_setLokol1;
-                  });
-                },
-                icon: _setLokol1
-                    ? const Icon(
-                        Icons.notifications_none,
-                        color: Colors.black,
-                      )
-                    : const Icon(
-                        Icons.notifications,
-                        color: Colors.black,
-                      ),
-              ),
-              IconButton(
-                onPressed: () {
-                  setState(() {
-                    _setLokol2 = !_setLokol2;
-                  });
-                },
-                icon: _setLokol2
-                    ? const Icon(
-                        Icons.shopping_cart_outlined,
-                        color: Colors.black,
-                      )
-                    : const Icon(
-                        Icons.shopping_cart_sharp,
-                        color: Colors.black,
-                      ),
-              ),
-            ],
+            IconButton(
+              onPressed: () {
+                setState(() {
+                  _setLokol1 = !_setLokol1;
+                });
+              },
+              icon: _setLokol1
+                  ? const Icon(
+                      Icons.notifications_none,
+                      color: Colors.black,
+                    )
+                  : const Icon(
+                      Icons.notifications,
+                      color: Colors.black,
+                    ),
+            ),
+            IconButton(
+              onPressed: () {
+                setState(() {
+                  _setLokol2 = !_setLokol2;
+                });
+              },
+              icon: _setLokol2
+                  ? const Icon(
+                      Icons.shopping_cart_outlined,
+                      color: Colors.black,
+                    )
+                  : const Icon(
+                      Icons.shopping_cart_sharp,
+                      color: Colors.black,
+                    ),
+            ),
+          ],
           bottom: const TabBar(
             labelColor: Colors.black,
             isScrollable: true,
